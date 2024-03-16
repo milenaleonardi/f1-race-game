@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+header nav {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  padding: 1.5% 15%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+header img {
+  width: 4rem;
+  height: 4rem;
+}
+h3 a {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: red;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-bet,
+button {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.main-bet {
+  margin-top: 1rem;
+  align-items: center;
+}
+.main-bet input[type="number"] {
+  margin-left: 1rem;
+  margin-right: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid grey;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.main-bet input[type="number"]:focus {
+  border: 3px solid grey;
+}
+.section-options {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.section-options select {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  border: 2px solid grey;
+  padding: 0 1.5rem;
+}
+.section-options option {
+  font-size: 1.5rem;
+  margin: 0 0.75rem;
+  border: 1px solid grey;
+}
+.section-options button {
+  font-size: 1.25rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  background: transparent;
+  border-radius: 4px;
+}
+.section-options button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-style: italic;
+}
+
+.section-game img {
+  float: right;
+}
+
+.pista {
+  width: 800px;
+  height: 80px;
+  background-color: rgb(211, 211, 211);
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+#car1,
+#car2,
+#car3,
+#car4,
+#car5 {
+  position: absolute;
+  transform: translateX(0px);
+}
+
+#car1 img {
+  width: 100px;
+  height: 100px;
+}
+#car2 img {
+  width: 100px;
+  height: 100px;
+}
+
+#car3 img {
+  width: 100px;
+  height: 100px;
+}
+#car4 img {
+  width: 100px;
+  height: 100px;
+}
+#car5 img {
+  width: 100px;
+  height: 100px;
+}
+
+#finish-line {
+  margin-top: -4rem;
+  width: 5rem;
+  margin-left: 800px;
+}
+#message {
+  font-size: 2rem;
+}

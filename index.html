@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Race Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./public/flags.png" alt="" />
+        <h3><a href=".index.html">F1 Race Game</a></h3>
+      </nav>
+    </header>
+    <main>
+      <h1>Saldo Atual: R$<span id="value">100</span></h1>
+      <section class="section-options">
+        <div class="main-pilot">
+          <label for="option">Choose your pilot:</label>
+          <select name="option" id="option">
+            <option value="1">Piloto 1</option>
+            <option value="2">Piloto 2</option>
+            <option value="3">Piloto 3</option>
+            <option value="4">Piloto 4</option>
+            <option value="5">Piloto 5</option>
+          </select>
+        </div>
+        <div class="main-bet">
+          <label for="bet">Make your bet:</label>
+          <input id="bet" type="number" min="5" placeholder="R$" required />
+        </div>
+        <button id="btn-start" onclick="startRace()">Start Race</button>
+      </section>
+      <img id="finish-line" src="./public/finish-flag.png" alt="" />
+      <section class="section-game">
+        <div class="pista">
+          <div id="car1">
+            <img src="./public/cars/racing-car1.png" alt="" />
+          </div>
+        </div>
+
+        <div class="pista">
+          <div id="car2">
+            <img src="./public/cars/racing-car2.png" alt="" />
+          </div>
+        </div>
+        <div class="pista">
+          <div id="car3">
+            <img src="./public/cars/racing-car3.png" alt="" />
+          </div>
+        </div>
+        <div class="pista">
+          <div id="car4">
+            <img src="./public/cars/racing-car4.png" alt="" />
+          </div>
+        </div>
+        <div class="pista">
+          <div id="car5">
+            <img src="./public/cars/racing-car5.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <div id="message"></div>
+    </main>
+  </body>
+</html>
