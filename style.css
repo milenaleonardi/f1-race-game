@@ -27,7 +27,7 @@ header img {
 }
 
 h3 a {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-style: italic;
@@ -37,7 +37,7 @@ h3 a {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-align: center;
   margin: 1rem;
 }
@@ -72,7 +72,7 @@ select {
   padding: 0 1rem;
   border: 2px solid grey;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 0.875rem;
   width: 10em;
   height: 3em;
 }
@@ -83,18 +83,18 @@ select {
 
 .section-options {
   padding-bottom: 2rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
 .main-bet,
 .main-pilot {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   justify-content: space-between;
 }
 .section-options select,
 .section-options option {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin: 0 1rem; /* Adjusted margin for better spacing */
   padding: 0.5rem 1rem; /* Adjusted padding for better spacing */
   border: 2px solid grey;
@@ -104,11 +104,11 @@ select {
   margin-top: 1rem;
   justify-content: center;
   padding: 0.5rem 2rem;
-  width: 18rem;
+  width: 15rem;
   background-color: red;
   color: white;
   border: 2px solid black;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 .button:hover {
   background-color: rgb(250, 61, 61);
@@ -121,9 +121,9 @@ select {
 }
 
 .pista {
-  width: 50rem;
-  max-width: 50rem;
-  height: 80px;
+  width: 700px;
+  max-width: 700px;
+  height: 60px;
   background-color: rgb(211, 211, 211);
   position: relative;
   margin: 1.5rem 1rem;
@@ -134,7 +134,7 @@ select {
 }
 
 .pista:last-child {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 #car1,
@@ -151,23 +151,23 @@ select {
 #car3 img,
 #car4 img,
 #car5 img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 #finish-line {
-  width: 5rem;
+  width: 4rem;
   margin: -4rem 1rem 0 0;
 }
 
 #message {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 @media screen and (max-width: 1024px) {
   .pista {
     width: 40em;
-    margin: 1rem 4rem 0 2rem;
+    margin: 2rem 4rem 0 2rem;
   }
 
   .section-options button:focus {
@@ -183,7 +183,7 @@ select {
   }
   .pista {
     width: 35em;
-    margin: 1rem 4rem 0 2rem;
+    margin: 1.5rem 4rem 0 2rem;
   }
 }
 

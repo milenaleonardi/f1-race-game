@@ -11,20 +11,20 @@ const btn = document.getElementById("btn-start");
 btn.addEventListener("click", startRace);
 
 function moveCar() {
-  if (posX1 > 700 || posX2 > 700 || posX3 > 700 || posX4 > 700 || posX5 > 700) {
-    if (posX1 > 700 && !winner) {
+  if (posX1 > 610 || posX2 > 610 || posX3 > 610 || posX4 > 610 || posX5 > 610) {
+    if (posX1 > 610 && !winner) {
       winner = "pilot 1";
       winningCarId = "1";
-    } else if (posX2 > 700 && !winner) {
+    } else if (posX2 > 610 && !winner) {
       winner = "pilot 2";
       winningCarId = "2";
-    } else if (posX3 > 700 && !winner) {
+    } else if (posX3 > 610 && !winner) {
       winner = "pilot 3";
       winningCarId = "3";
-    } else if (posX4 > 700 && !winner) {
+    } else if (posX4 > 610 && !winner) {
       winner = "pilot 4";
       winningCarId = "4";
-    } else if (posX5 > 700 && !winner) {
+    } else if (posX5 > 610 && !winner) {
       winner = "pilot 5";
       winningCarId = "5";
     }
@@ -82,10 +82,10 @@ function myStop(winner) {
   if (chosenRacer === winningCarId) {
     saldo += 2 * parseInt(bet);
     const profit = 2 * parseInt(bet);
-    message = "Congratulations, you have won the race! You earned R$ " + profit;
+    message = "Congratulations, you won the race! You earned R$ " + profit;
   } else {
     saldo -= parseInt(bet);
-    message = "Sorry, you have lost. The winner is " + winner;
+    message = "Sorry, you lost. The winner is " + winner;
   }
   document.getElementById("value").textContent = saldo;
   document.getElementById("message").textContent = message;
