@@ -15,26 +15,29 @@
       </nav>
     </header>
     <main>
-      <h1>Saldo Atual: R$<span id="value">100</span></h1>
-      <section class="section-options">
-        <div class="main-pilot">
-          <label for="option">Choose your pilot:</label>
-          <select name="option" id="option">
-            <option value="1">Piloto 1</option>
-            <option value="2">Piloto 2</option>
-            <option value="3">Piloto 3</option>
-            <option value="4">Piloto 4</option>
-            <option value="5">Piloto 5</option>
-          </select>
-        </div>
-        <div class="main-bet">
-          <label for="bet">Make your bet:</label>
-          <input id="bet" type="number" min="5" placeholder="R$" required />
-        </div>
-        <button id="btn-start" onclick="startRace()">Start Race</button>
-      </section>
-      <img id="finish-line" src="./public/finish-flag.png" alt="" />
+      <div class="before-game">
+        <h1>Saldo Atual: R$<span id="value">100</span></h1>
+        <section class="section-options">
+          <div class="main-pilot">
+            <label for="option">Choose your pilot:</label>
+            <select name="option" id="option">
+              <option value="1">Piloto 1</option>
+              <option value="2">Piloto 2</option>
+              <option value="3">Piloto 3</option>
+              <option value="4">Piloto 4</option>
+              <option value="5">Piloto 5</option>
+            </select>
+          </div>
+          <div class="main-bet">
+            <label for="bet">Make your bet:</label>
+            <input id="bet" type="number" min="5" placeholder="R$" required />
+          </div>
+          <button id="btn-start" onclick="startRace()">Start Race</button>
+        </section>
+      </div>
+
       <section class="section-game">
+        <img id="finish-line" src="./public/finish-flag.png" alt="" />
         <div class="pista">
           <div id="car1">
             <img src="./public/cars/racing-car1.png" alt="" />
