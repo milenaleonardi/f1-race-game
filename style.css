@@ -5,10 +5,12 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
 header {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 1rem;
-  padding: 1.5% 5%; /* Adjusted padding for better responsiveness */
 }
 
 header nav {
@@ -16,6 +18,7 @@ header nav {
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+  padding: 1rem 5rem;
 }
 
 header img {
@@ -35,10 +38,18 @@ h3 a {
 
 h1 {
   font-size: 2rem;
-  margin: 2rem auto;
+  text-align: center;
+  margin: 1rem;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.before-game,
+.button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,22 +57,18 @@ main {
 }
 
 .main-bet,
-button,
+.button,
 .main-pilot {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
-}
-button {
-  padding: 0.75rem 1.5rem;
-  font-weight: 300;
 }
 
 .main-bet input[type="number"],
 #option,
 select {
   margin-left: 1rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
   padding: 0 1rem;
   border: 2px solid grey;
   border-radius: 4px;
@@ -80,39 +87,46 @@ select {
   text-transform: uppercase;
 }
 
+.main-bet,
+.main-pilot {
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
 .section-options select,
-.section-options option,
-.section-options button {
+.section-options option {
   font-size: 1.25rem;
   margin: 0 1rem; /* Adjusted margin for better spacing */
   padding: 0.5rem 1rem; /* Adjusted padding for better spacing */
   border: 2px solid grey;
   border-radius: 4px;
 }
-.section-options button {
-  margin-top: 2rem;
-  margin-left: 20%;
+.button {
+  margin-top: 1rem;
+  justify-content: center;
   padding: 0.5rem 2rem;
+  width: 18rem;
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+  font-size: 1.25rem;
 }
-.section-options button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.button:hover {
+  background-color: rgb(250, 61, 61);
   cursor: pointer;
   font-style: italic;
 }
-.section-options button {
-  align-items: center;
-}
+
 .section-game img {
   float: right;
 }
 
 .pista {
-  width: 100em; /* Changed width to 100% for better responsiveness */
-  max-width: 50em; /* Added max-width for better responsiveness */
+  width: 50rem;
+  max-width: 50rem;
   height: 80px;
   background-color: rgb(211, 211, 211);
   position: relative;
-  margin: 1.5rem 2rem;
+  margin: 1.5rem 1rem;
   display: flex;
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -143,7 +157,7 @@ select {
 
 #finish-line {
   width: 5rem;
-  margin: -4rem 2rem 0 0;
+  margin: -4rem 1rem 0 0;
 }
 
 #message {
@@ -151,9 +165,6 @@ select {
 }
 
 @media screen and (max-width: 1024px) {
-  body {
-    overflow: hidden;
-  }
   .pista {
     width: 40em;
     margin: 1rem 4rem 0 2rem;
@@ -167,27 +178,40 @@ select {
 }
 
 @media screen and (max-width: 798px) {
+  body {
+    overflow: hidden;
+  }
   .pista {
-    width: 30em;
-    margin: 1rem 5rem 0 2rem;
+    width: 35em;
+    margin: 1rem 4rem 0 2rem;
   }
 }
 
 @media screen and (max-width: 560px) {
+  body {
+    overflow: hidden;
+  }
   .pista {
     width: 20em;
-    margin: 1rem 1rem 0 0;
+    margin: 1rem 0.5rem 0 0;
+  }
+
+  header nav {
+    padding: 0.5rem 1rem;
+  }
+  main {
+    margin: 0;
   }
 
   #finish-line {
-    width: 4rem;
-    margin: 0rem 3rem 1rem 0;
+    width: 2rem;
+    margin: 0;
   }
 
   .before-game {
     display: flex;
     flex-direction: column;
-    margin: 1rem 3rem;
+    margin: 1rem 2rem;
     align-items: center;
     justify-content: center;
   }
